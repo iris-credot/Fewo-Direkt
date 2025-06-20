@@ -12,6 +12,18 @@
       height: 100%;
       margin: 0;
     }
+    .bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./images/image1.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7;
+      z-index: 0;
+    }
   </style>
 </head>
 <body class="w-screen flex flex-col min-h-screen p-0">
@@ -41,27 +53,30 @@
   </header>
 
   <main class="flex-1">
-    <section class="h-full bg-[url('./images/background-1.png')] bg-cover bg-center flex items-center justify-center">
-      <div class="h-[30%] w-[77%] flex flex-col gap-9  justify-center ">
-        <div class="text-white text-4xl ">The whole place just for you</div>
-        <div class=" rounded-2xl bg-white w-full h-20 gap-3 p-3 flex flex-row-4 justify-center">
-        <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
-          <i class="ri-map-pin-line text-2xl"></i>
-<span>Where do you want to go?</span>
-</button>
-         <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
-          <i class="ri-calendar-line text-2xl"></i>
-          <div class="flex flex-col  items-start">
-            <span class="text-xs">Data</span>
-            <span>June 28 - July 12</span>
-          </div></button>
+    <section class="h-[90%] bg-black relative flex items-center justify-center">
+      <div class="bg-overlay"></div>
+      <div class="h-[30%] w-[77%] flex flex-col gap-8 justify-center relative z-10">
+        <div class="text-white text-4xl">The whole place just for you</div>
+        <div class="rounded-2xl bg-white w-full h-20 gap-3 p-3 flex flex-row justify-center">
+          <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
+            <i class="ri-map-pin-line text-2xl"></i>
+            <span>Where do you want to go?</span>
+          </button>
+          <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
+            <i class="ri-calendar-line text-2xl"></i>
+            <div class="flex flex-col items-start">
+              <span class="text-xs">Date</span>
+              <span>June 28 - July 12</span>
+            </div>
+          </button>
           <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
             <i class="ri-user-line text-2xl"></i>
-<div class="flex flex-col items-start">
-  <span class="text-xs">Guests</span>
-  <span>2 travellers</span>
-</div></button>
-           <button class="border border-gray-500 rounded-full bg-blue-600 w-[8%] text-white ">Search</button>
+            <div class="flex flex-col items-start">
+              <span class="text-xs">Guests</span>
+              <span>2 travellers</span>
+            </div>
+          </button>
+          <button class="border border-gray-500 rounded-full bg-blue-600 w-[8%] text-white">Search</button>
         </div>
       </div>
     </section>
