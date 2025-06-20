@@ -7,34 +7,64 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
   <link rel="shortcut icon" href="./images/logoo.png" type="image/x-icon">
-
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
 </head>
-<body class="w-screen p-6 " >
-    <header class="flex  w-full  gap-6  h-14">
-      <div class="text-blue-600 text-4xl font-semibold w-[30%] text-center ">FeWo-direkt<sup class="text-xs align-super">®</sup></div>
-     
-      <nav class="w-[70%] ">
-       <ul class="flex space-x-8 text-black font-semibold text-sm w-full justify-center items-center">
-  <li>
-    <a
-      href="https://www.fewo-direkt.de/app?~feature=Mobile%20Web&~channel=Referral…"
-      class="flex items-center space-x-2 border border-gray-300 rounded-full px-4 py-1 hover:bg-gray-100 transition"
-      rel="noopener"
-    >
-      <span>Download the app</span>
-      <i class="ri-download-2-line text-base text-blue-500"></i>
-    </a>
-  </li>
-  <li><a href="https://www.fewo-direkt.de/trips" class="hover:text-blue-600">Travel Planner</a></li>
-  <li><a href="https://www.fewo-direkt.de/de-de/list" class="hover:text-blue-600">Register your property</a></li>
-  <li><a href="https://www.fewo-direkt.de/helpcenter" class="hover:text-blue-600">Help</a></li>
-  <li><a href="https://www.fewo-direkt.de/login?enable_login=true&redirectTo=/traveler/th/bookings" class="hover:text-blue-600">My Travels</a></li>
-  <li><a href="/announce" class="hover:text-blue-600">Announce</a></li>
-</ul>
+<body class="w-screen flex flex-col min-h-screen p-0">
+  <header class="flex w-full gap-6 h-[10%] pb-2 items-center px-6">
+    <div class="text-blue-600 text-4xl font-semibold w-[30%] text-center">
+      FeWo-direkt<sup class="text-xs align-super">®</sup>
+    </div>
+    <nav class="w-[70%]">
+      <ul class="flex space-x-8 text-black font-semibold text-sm w-full justify-center items-center">
+        <li>
+          <a
+            href="https://www.fewo-direkt.de/app"
+            class="flex items-center space-x-2 border border-gray-300 rounded-full px-4 py-1 hover:bg-gray-100 transition"
+            rel="noopener"
+          >
+            <span>Download the app</span>
+            <i class="ri-download-2-line text-base text-blue-500"></i>
+          </a>
+        </li>
+        <li><a href="https://www.fewo-direkt.de/trips" class="hover:text-blue-600">Travel Planner</a></li>
+        <li><a href="https://www.fewo-direkt.de/de-de/list" class="hover:text-blue-600">Register your property</a></li>
+        <li><a href="https://www.fewo-direkt.de/helpcenter" class="hover:text-blue-600">Help</a></li>
+        <li><a href="https://www.fewo-direkt.de/login?enable_login=true&redirectTo=/traveler/th/bookings" class="hover:text-blue-600">My Travels</a></li>
+        <li><a href="/announce" class="hover:text-blue-600">Announce</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      
-
-      </nav>
-    </header>
+  <main class="flex-1">
+    <section class="h-full bg-[url('./images/background-1.png')] bg-cover bg-center flex items-center justify-center">
+      <div class="h-[30%] w-[77%] flex flex-col gap-9  justify-center ">
+        <div class="text-white text-4xl ">The whole place just for you</div>
+        <div class=" rounded-2xl bg-white w-full h-20 gap-3 p-3 flex flex-row-4 justify-center">
+        <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
+          <i class="ri-map-pin-line text-2xl"></i>
+<span>Where do you want to go?</span>
+</button>
+         <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
+          <i class="ri-calendar-line text-2xl"></i>
+          <div class="flex flex-col  items-start">
+            <span class="text-xs">Data</span>
+            <span>June 28 - July 12</span>
+          </div></button>
+          <button class="border border-gray-500 rounded-2xl w-[30%] flex p-3 items-center gap-3 text-gray-800">
+            <i class="ri-user-line text-2xl"></i>
+<div class="flex flex-col items-start">
+  <span class="text-xs">Guests</span>
+  <span>2 travellers</span>
+</div></button>
+           <button class="border border-gray-500 rounded-full bg-blue-600 w-[8%] text-white ">Search</button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
