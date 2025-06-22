@@ -10,23 +10,17 @@
 
   <link rel="shortcut icon" href="./images/logoo.png" type="image/x-icon">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-    .bg-overlay {
+  
+    .overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+     inset: 0;
       background-image: url('./images/image1.png');
       background-size: cover;
       background-position: center;
       opacity: 0.7;
       z-index: 0;
     }
-     .bg-overllay {
+     .nine {
       background-size: cover;
       background-position: center;
       border-bottom-left-radius: 5%;
@@ -86,10 +80,10 @@
     </nav>
   </header>
 
-  <main class="flex-1">
+  <main class="flex-grow flex flex-col">
     
-    <section class="h-[38rem] bg-black relative flex items-center justify-center">
-      <div class="bg-overlay"></div>
+    <section class="h-[38rem] bg-black relative flex items-center justify-center mt-2">
+      <div class="overlay"></div>
       <div class="h-[30%] w-[77%] flex flex-col gap-8 justify-center relative z-10">
         <div class="text-white text-4xl">The whole place just for you</div>
         <div class="rounded-2xl bg-white w-full h-20 gap-3 p-3 flex flex-row justify-center">
@@ -161,11 +155,21 @@
       <div class="h-full w-[80%] flex flex-col   gap-7 bg-white">
         <h3 class="h-[10%] text-3xl font-semibold text-gray-800">Find accommodations to suite your taste</h3>
         <div class="h-[80%]  flex gap-4">
-          <div class="bg-overllay fourt1 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"> <div class="h-[90%]"></div><span class="h-[10%]">Holiday home</span></div>
-           <div class="bg-overllay fourt2 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"> <div class="h-[90%]"></div><span class="h-[10%]">Holiday apartment/apartment</span></div>
-            <div class="bg-overllay fourt3 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"><div class="h-[90%]"></div><span class="h-[10%]">Holiday cabin</span></div>
-             <div class="bg-overllay fourt4 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"><div class="h-[90%]"></div><span class="h-[10%]">Villa</span></div>
-              <div class="bg-overllay fourt5 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"><div class="h-[90%]"></div><span class="h-[10%]">Villa</span></div>
+          <div class="nine fourt1 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"> 
+            <div class="h-[90%]"></div><span class="h-[10%]">Holiday home</span>
+          </div>
+           <div class="nine fourt2 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1"> 
+            <div class="h-[90%]"></div><span class="h-[10%]">Holiday apartment/apartment</span>
+          </div>
+            <div class="nine fourt3 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1">
+              <div class="h-[90%]"></div><span class="h-[10%]">Holiday cabin</span>
+            </div>
+             <div class="nine fourt4 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1">
+              <div class="h-[90%]"></div><span class="h-[10%]">Villa</span>
+            </div>
+              <div class="nine fourt5 w-1/5 h-full text-white font-bold text-sm flex flex-col p-1">
+                <div class="h-[90%]"></div><span class="h-[10%]">Villa</span>
+              </div>
              
         </div>
       </div>
@@ -196,7 +200,7 @@
         </div>
       </div>
     </section>
-    <section class="flex  w-full h-32  justify-center items-center mt-9">
+    <section class="flex  w-full min-h-32  justify-center items-center mt-9">
 <div class="h-[98%] w-[80%] flex flex-col">
   <p class="text-3xl font-semibold">What is FeWo-direkt?</p>
   <p class="mt-6 text-base text-gray-900">FeWo-direkt is your competent contact for holidays in a <span class="text-blue-600">holiday home </span>or <span class="text-blue-600">apartment</span>. As part of Vrbo, one of the leading online marketplaces for vacation rental rentals, FeWo-direkt offers you more than two million unique accommodations, including fincas, bungalows, apartments, <span class="text-blue-600">holiday cabins</span> and even <span class="text-blue-600">villas</span>. Secure payments, round-the-clock support and the Book with Confidence Guarantee make bookings a breeze. Via the user-friendly website and numerous practical filters, you can easily find your dream holiday apartment for your budget. So you are sure to spend an unforgettable holiday, which is stress-free from the search to the booking to the stay and departure.</p>
@@ -204,7 +208,90 @@
 <p class="mt-6 text-base text-gray-900">Families and groups in particular appreciate the advantages of holiday accommodation: more space, more privacy, more amenities. You have more flexibility and freedom in your own four walls than in conventional hotels and can plan your holiday freely - regardless of whether you want to go on a city trip or switch off with your <span class="text-blue-600">dog</span> in the middle of picturesque nature. Are you looking for a cozy holiday cabin in the mountains with a washing machine and <span class="text-blue-600">hot tub</span>? A <span class="text-blue-600">beach house</span> on the water or a large finca in the south with <span class="text-blue-600">a pool</span> and fully equipped kitchen? No problem, because holiday accommodations are available in all sizes and with every desired equipment you have in mind for your next family holiday, adventure trip with friends or a romantic weekend.</p>
 </div>
     </section>
-    
+    <section class="mt-14 w-full flex items-center justify-center ">
+   <div class=" h-full w-[80%]  mx-auto space-y-7 ">
+       <h1 class="text-3xl font-bold text-gray-800">Popular Destinations</h1>
+        
+       
+        <h2 class="text-2xl font-semibold text-gray-700 mt-8">Top Destinations</h2>
+        
+     
+        <h3 class="text-xl font-medium text-gray-600 mt-6">Unique accommodations</h3>
+        
+      
+        <p class="text-xl font-medium text-gray-600 mt-6">Trending destinations in June</p>
+        
+   
+        <h3 class="text-xl font-medium text-gray-600 mt-6">Top Destinations for Villas</h3>
+        
+       
+        <h3 class="text-xl font-medium text-gray-600 mt-6">Vacation Rental Destinations</h3>
+        
+       
+        <h3 class="text-xl font-medium text-gray-600 mt-6">Travel Tips & Inspiration</h3>
+        
+      
+        <h3 class="text-xl font-medium text-gray-600 mt-6">Stay Longer and Save</h3>
+   </div>
+     
+     
+  
+    </section>
+<footer class="bg-gray-100 text-sm text-gray-800 px-6 py-10 rounded-t-3xl mt-8">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between space-y-10 md:space-y-0">
+  
+    <div>
+      <h2 class="text-blue-600 text-2xl font-semibold mb-4">FeWo-direkt<sup class="text-xs align-top">®</sup></h2>
+      <h3 class="font-semibold mb-2">Explore FeWo-direkt</h3>
+      <ul class="space-y-1">
+        <li><a href="#" class="text-blue-600 hover:underline">Advertise accommodation</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Book with confidence</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Trust and security</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Partner Resources</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Holiday homes and holiday inspiration</a></li>
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="font-semibold mb-2">Enterprise</h3>
+      <ul class="space-y-1">
+        <li><a href="#" class="text-blue-600 hover:underline">About us</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Career</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Affiliate Partners</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Press</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Privacy policy</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Cookie Statement</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Reporting illegal content</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Legal Notice/Contact</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Responsible owner</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Content policies and reporting</a></li>
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="font-semibold mb-2">The Vrbo Family</h3>
+      <ul class="space-y-1">
+        <li><a href="#" class="text-blue-600 hover:underline">Vrbo</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Abritel.fr</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">FeWo-direkt.de</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Bookabach.co.nz</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Stayz.com.au</a></li>
+      </ul>
+    </div>
+  </div>
+
+ 
+  <div class="my-6 border-t border-gray-300"></div>
+
+  
+  <p class="text-center text-xs text-gray-600">
+    © 2025 FeWo-direkt, an Expedia Group company. All rights reserved. FeWo-direkt and the FeWo-direkt logo are trademarks or registered trademarks of HomeAway.com, Inc.
+  </p>
+</footer>
+
    
   </main>
 
